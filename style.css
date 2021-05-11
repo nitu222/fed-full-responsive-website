@@ -1,0 +1,77 @@
+article img {
+    float: left;
+    margin: 5px 20px 10px 1px;
+  }
+  
+ 
+  h2 {
+    color: #1d3557;
+  }
+  
+    h1 {
+        font-size: 2.2rem;
+        text-align: center;
+         border-width: 10px;
+        border-style: solid;
+        border-color: lightseagreen; 
+        border: 10px solid lightseagreen; 
+        padding: 20px 0px;
+        border-top: 10px solid lightsalmon;
+        border-left: 10px solid lightgreen;
+        border-bottom: 10px solid lightskyblue;
+        border-right: 10px solid lightslategray;
+        border-radius: 15px 50px 30px; 
+        border-radius: 20px;
+        background-color: lightskyblue;
+      }
+   
+  
+  p {
+    letter-spacing: 0.09em;
+    line-height: 1.5;
+  }
+  
+  hr {
+    overflow: visible; 
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+  }
+  hr:before {
+    /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+  }
+
+  @media screen and (max-width: 1024px) {
+   article img {
+      font-size: 2.5rem;
+      
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width:1023px){
+   article img {
+      font-size: 1.5rem;
+    }
+  }
+
+  
+  @media screen and (orientation: landscape) {
+    article img {
+     
+      font-size: 1rem;
+    }
+  }
+  article:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+  }
